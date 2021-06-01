@@ -1,0 +1,39 @@
+{
+  "conventionalCommits.emojiFormat": "emoji",
+  "cSpell.language": "en,da",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "off",
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    80
+  ],
+  "editor.suggestSelection": "first",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/.cache": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "sort-imports.on-save": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "window.zoomLevel": 2,
+  "workbench.colorTheme": "Shades of Purple",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "welcomePage",
+  "workbench.statusBar.visible": false
+}
