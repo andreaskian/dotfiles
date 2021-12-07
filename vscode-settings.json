@@ -1,4 +1,5 @@
 {
+  "breadcrumbs.enabled": false,
   "conventionalCommits.emojiFormat": "emoji",
   "cSpell.language": "en,da",
   "editor.codeActionsOnSave": {
