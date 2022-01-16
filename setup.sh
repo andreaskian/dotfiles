@@ -38,8 +38,11 @@ mkdir $HOME/Sites
 # Remove outdated versions from the cellar.
 brew cleanup
 
-# Set vscode preferences
+# VS Code preferences
 source $DOTFILES/.vscode
+
+# Divvy shortcuts
+source $DOTFILES/.divvy
 
 # Set macOS preferences
 source $DOTFILES/.macos
