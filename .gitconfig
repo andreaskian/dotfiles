@@ -1,5 +1,12 @@
 [user]
 	name = Andreas Kian
 	email = andreas@andreaskian.dk
+
+[core]
+	excludesfile = ~/.gitignore
+
+[fetch]
+	prune = true
+
 [pull]
 	rebase = true

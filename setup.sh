@@ -16,8 +16,10 @@ if test ! $(which brew); then
 fi
 
 # Creat symlinks
-for i in ".zshrc" \
-	".gitconfig"; do
+for i in ".mackup.cfg" \
+  ".zshrc" \
+  ".gitconfig" \
+	".gitignore"; do
     sourceFile="$(pwd)/$i"
     targetFile="$HOME/$i"
     rm -rf $targetFile
