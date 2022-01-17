@@ -57,6 +57,11 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Wipe all (default) app icons from the Dock
+# This is only really useful when setting up a new Mac, or if you don’t use
+# the Dock to launch apps.
+defaults write com.apple.dock persistent-apps -array
+
 # Show week numbers
 defaults write com.apple.iCal "Show Week Numbers" -bool true
 
