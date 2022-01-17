@@ -2,6 +2,7 @@
   "breadcrumbs.enabled": false,
   "conventionalCommits.emojiFormat": "emoji",
   "cSpell.language": "en,da",
+  "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
@@ -10,11 +11,10 @@
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.suggestSelection": "first",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -28,7 +28,6 @@
   },
   "git.confirmSync": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "sort-imports.on-save": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.title": "${activeEditorMedium}${separator}${rootName}",

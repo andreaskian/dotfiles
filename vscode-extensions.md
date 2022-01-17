@@ -1,9 +1,8 @@
-# VS Code Extensions 
+# VS Code Extensions
 
 Heres a list of extensions I use in VS Code:
 
 - [aaron-bond.better-comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-- [coenraads.bracket-pair-colorizer-2](https://marketplace.visualstudio.com/items?itemName=coenraads.bracket-pair-colorizer-2)
 - [naumovs.color-highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 - [streetsidesoftware.code-spell-checker-danish](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-danish)
 - [streetsidesoftware.code-spell-checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
