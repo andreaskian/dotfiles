@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Divvy requires rosetta to work
+softwareupdate --install-rosetta --agree-to-license
+
 # Export Divvy shortcuts by opening `divvy://export` in a browser
 
 # Import Divvy shortcuts
