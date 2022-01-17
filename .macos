@@ -18,6 +18,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set tracking speed to maximum
 defaults write -g com.apple.trackpad.scaling -int 3
 
+# Hide desktop files
+defaults write com.apple.finder CreateDesktop false
+
 # Show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
