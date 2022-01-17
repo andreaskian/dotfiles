@@ -19,12 +19,15 @@ fi
 for i in ".mackup.cfg" \
   ".zshrc" \
   ".gitconfig" \
-	".gitignore"; do
+  ".gitignore"; do
     sourceFile="$(pwd)/$i"
     targetFile="$HOME/$i"
     rm -rf $targetFile
     ln -fs $sourceFile $targetFile
 done
+
+# Reload .zshrc to make `$DOTFILES` alias available
+source ~/.zshrc
 
 # Update Homebrew recipes
 brew update
