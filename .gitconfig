@@ -2,6 +2,9 @@
 	name = Andreas Kian
 	email = andreas@andreaskian.dk
 
+[github]
+	user = andreaskian
+
 [core]
 	excludesfile = ~/.gitignore
 

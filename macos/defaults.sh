@@ -10,11 +10,6 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Probably can delete?
-# Require password immediately after sleep or screen saver begins
-# defaults write com.apple.screensaver askForPassword -int 1
-# defaults write com.apple.screensaver askForPasswordDelay -int 0
-
 # Set tracking speed to maximum
 defaults write -g com.apple.trackpad.scaling -int 3
 
@@ -54,16 +49,11 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # 12: Notification Center
 # 13: Lock Screen
 # Bottom right screen corner → Start screen saver
-defaults write com.apple.dock wvous-br-corner -int 13
+defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
-
-# Wipe all (default) app icons from the Dock
-# This is only really useful when setting up a new Mac, or if you don’t use
-# the Dock to launch apps.
-defaults write com.apple.dock persistent-apps -array
 
 # Show week numbers
 defaults write com.apple.iCal "Show Week Numbers" -bool true
@@ -71,15 +61,8 @@ defaults write com.apple.iCal "Show Week Numbers" -bool true
 # Week starts on monday
 defaults write com.apple.iCal "first day of week" -int 1
 
-# Probably can delete?
-# Prevent Photos from opening automatically when devices are plugged in
-# defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-
-for app in "Calendar" \
-    "Dock" \
-    "Finder"; do
+for app in "Calendar" "Dock" "Finder"; do
     killall "${app}" &> /dev/null
 done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-

@@ -2,29 +2,23 @@
 
 echo "Setting up your Mac..."
 
-# Check for Oh My Zsh and install if we don't have it
-if test ! $(which omz); then
-  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
-fi
-
-# Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
+# Install Homebrew or make sure it's up to date
+which -s brew
+if [[ $? != 0 ]] ; then
+  /bin/bash -c ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
   eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  brew update
+  brew upgrade
 fi
 
-# Creat symlinks
-for i in ".mackup.cfg" \
-  ".zshrc" \
-  ".gitconfig" \
-  ".gitignore"; do
-    sourceFile="$(pwd)/$i"
-    targetFile="$HOME/$i"
-    rm -rf $targetFile
-    ln -fs $sourceFile $targetFile
-done
+# Creat symlinks using Stow
+which -s stow
+if [[ $? != 0 ]] ; then
+  brew install stow
+  stow .
+fi
 
 # Reload .zshrc to make `$DOTFILES` alias available
 source ~/.zshrc
@@ -34,7 +28,6 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-
 brew bundle --file $DOTFILES/Brewfile
 
 # Create a Sites directory
@@ -44,10 +37,8 @@ mkdir $HOME/Sites
 brew cleanup
 
 # VS Code preferences
-source $DOTFILES/.vscode
-
-# Divvy shortcuts
-source $DOTFILES/.divvy
+source $DOTFILES/install/vscode.sh
 
 # Set macOS preferences
-source $DOTFILES/.macos
+source $DOTFILES/macos/dock.sh
+source $DOTFILES/macos/defaults.sh
