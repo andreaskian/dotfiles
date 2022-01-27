@@ -1,8 +1,8 @@
-hs.loadSpoon("WindowScreenLeftAndRight")
-hs.loadSpoon("WindowHalfsAndThirds")
+hs.loadSpoon("SpoonInstall")
+spoon.SpoonInstall.use_syncinstall = true
 
-spoon.WindowScreenLeftAndRight:bindHotkeys(spoon.WindowScreenLeftAndRight.defaultHotkeys)
-spoon.WindowHalfsAndThirds:bindHotkeys(spoon.WindowHalfsAndThirds.defaultHotkeys)
+spoon.SpoonInstall:andUse("WindowScreenLeftAndRight", { hotkeys = 'default' })
+spoon.SpoonInstall:andUse("WindowHalfsAndThirds", { hotkeys = 'default' })
 
 -- remove resize animations
 hs.window.animationDuration = 0
