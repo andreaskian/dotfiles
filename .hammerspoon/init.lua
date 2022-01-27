@@ -1,14 +1,14 @@
+local pushkey = {"⌃", "⌘", "⌥"}
+local divvy = {"⇧", "⌘"}
+
 hs.loadSpoon("SpoonInstall")
 spoon.SpoonInstall.use_syncinstall = true
 
-spoon.SpoonInstall:andUse("WindowScreenLeftAndRight", { hotkeys = 'default' })
-spoon.SpoonInstall:andUse("WindowHalfsAndThirds", { hotkeys = 'default' })
+spoon.SpoonInstall:andUse("WindowScreenLeftAndRight", { hotkeys = "default" })
+spoon.SpoonInstall:andUse("WindowHalfsAndThirds", { hotkeys = "default" })
 
 -- remove resize animations
 hs.window.animationDuration = 0
-
-local pushkey = {"⌃", "⌘", "⌥"}
-local divvy = {"⇧", "⌘"}
 
 -- zero margins
 hs.grid.MARGINX     = 0
@@ -34,6 +34,11 @@ end)
 
 hs.hotkey.bind(divvy, "2", function()
   spoon.WindowHalfsAndThirds:rightHalf()
+end)
+
+hs.hotkey.bind(divvy, "UP", function()
+  local win = hs.window.focusedWindow()
+  win:move({0,0,1,1})
 end)
 
 hs.alert("Hammerspoon loaded")
