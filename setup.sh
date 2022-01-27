@@ -28,7 +28,7 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
-brew bundle --file $DOTFILES/Brewfile
+brew bundle --file $DOTFILES/Brewfile || true
 
 # Create a Sites directory
 mkdir $HOME/Sites
