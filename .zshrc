@@ -109,6 +109,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# dark mode
+alias dm="dark-mode"
+
 # Remap code to `code-insiders`
 alias code="code-insiders"
 

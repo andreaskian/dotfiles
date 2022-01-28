@@ -3,6 +3,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
+brew 'dark-mode'
 brew 'dockutil'
 brew 'git'
 brew 'mackup'
