@@ -20,6 +20,12 @@ hs.grid.GRIDHEIGHT  = 1
 
 hs.hotkey.bind(pushkey, "g", hs.grid.show)
 
+-- custom 2:3 - alternative to ⇧ + ⌘ + 1
+hs.hotkey.bind(pushkey, "t", function()
+  local win = hs.window.focusedWindow()
+  win:move({0,0,0.666,1})
+end)
+
 -- center
 hs.hotkey.bind(divvy, "c", function()
   local win = hs.window.focusedWindow()
