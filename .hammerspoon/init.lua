@@ -16,7 +16,7 @@ hs.grid.MARGINY     = 0
 
 -- grid
 hs.grid.GRIDWIDTH   = 6
-hs.grid.GRIDHEIGHT  = 1
+hs.grid.GRIDHEIGHT  = 4
 
 hs.hotkey.bind(pushkey, "g", hs.grid.show)
 
