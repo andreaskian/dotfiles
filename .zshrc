@@ -1,8 +1,3 @@
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -126,7 +121,3 @@ alias nrtw="npm run test:watch -s --";
 alias npm-update="npx npm-check-updates --dep prod,dev --upgrade";
 alias flush-npm="rm -rf .cache dist node_modules && npm i && say NPM is done";
 
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
