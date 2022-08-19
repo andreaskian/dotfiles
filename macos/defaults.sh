@@ -10,6 +10,15 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# disable ApplePressAndHoldEnabled - requires restart
+defaults write -g ApplePressAndHoldEnabled 0
+
+# Set `KeyRepeat` to maximum speed - requires restart
+defaults write -g KeyRepeat -int 2
+
+# Set `InitialKeyRepeat` to maximum speed - requires restart
+defaults write -g InitialKeyRepeat -int 15
+
 # Set tracking speed to maximum
 defaults write -g com.apple.trackpad.scaling -int 3
 
