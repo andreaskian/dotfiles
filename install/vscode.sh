@@ -5,25 +5,25 @@ cat $DOTFILES/vscode-settings.json > ~/Library/Application\ Support/Code\ -\ Ins
 
 # Install extentions
 for extension in "aaron-bond.better-comments" \
-    "naumovs.color-highlight" \
-    "streetsidesoftware.code-spell-checker-danish" \
-    "streetsidesoftware.code-spell-checker" \
-    "vivaxy.vscode-conventional-commits" \
-    "joelday.docthis" \
+    "ahmadawais.shades-of-purple" \
+    "andreaskian.idiomatic-css" \
+    "BriteSnow.vscode-toggle-quotes" \
     "dbaeumer.vscode-eslint" \
     "deerawan.vscode-faker" \
-    "eamodio.gitlens" \
-    "mike-co.import-sorter" \
-    "visualstudioexptteam.vscodeintellicode" \
-    "wix.vscode-import-cost" \
-    "esbenp.prettier-vscode" \
-    "tonybaloney.vscode-pets" \
     "dsznajder.es7-react-js-snippets" \
-    "ahmadawais.shades-of-purple" \
-    "britesnow.vscode-toggle-quotes"; do
+    "eamodio.gitlens" \
+    "esbenp.prettier-vscode" \
+    "GitHub.copilot" \
+    "mattpocock.ts-error-translator" \
+    "mike-co.import-sorter" \
+    "naumovs.color-highlight" \
+    "streetsidesoftware.code-spell-checker" \
+    "streetsidesoftware.code-spell-checker-danish" \
+    "tonybaloney.vscode-pets" \
+    "VisualStudioExptTeam.vscodeintellicode" \
+    "vivaxy.vscode-conventional-commits" \
+    "wix.vscode-import-cost"; do
     code --install-extension "$extension" &> /dev/null
 done
 
 echo "Installed VS Code extensions."
-
-
