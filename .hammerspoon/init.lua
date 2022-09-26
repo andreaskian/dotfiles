@@ -28,9 +28,9 @@ end)
 
 -- center
 hs.hotkey.bind(divvy, "c", function()
+  spoon.WindowHalfsAndThirds:leftHalf()
   local win = hs.window.focusedWindow()
-  -- win:centerOnScreen()
-  win:move({0.15,0.15,0.7,0.7})
+  win:centerOnScreen()
 end)
 
 -- divvy bindings - old habits die hard
