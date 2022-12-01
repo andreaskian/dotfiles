@@ -6,17 +6,18 @@ spoon.SpoonInstall.use_syncinstall = true
 
 spoon.SpoonInstall:andUse("WindowScreenLeftAndRight", { hotkeys = "default" })
 spoon.SpoonInstall:andUse("WindowHalfsAndThirds", { hotkeys = "default" })
+spoon.SpoonInstall:andUse("WindowCenter", { hotkeys = "default" })
 
 -- remove resize animations
 hs.window.animationDuration = 0
 
 -- zero margins
-hs.grid.MARGINX     = 0
-hs.grid.MARGINY     = 0
+hs.grid.MARGINX = 0
+hs.grid.MARGINY = 0
 
 -- grid
-hs.grid.GRIDWIDTH   = 6
-hs.grid.GRIDHEIGHT  = 4
+hs.grid.GRIDWIDTH = 6
+hs.grid.GRIDHEIGHT = 4
 
 hs.hotkey.bind(pushkey, "g", hs.grid.show)
 
@@ -24,13 +25,6 @@ hs.hotkey.bind(pushkey, "g", hs.grid.show)
 hs.hotkey.bind(pushkey, "t", function()
   local win = hs.window.focusedWindow()
   win:move({0,0,0.666,1})
-end)
-
--- center
-hs.hotkey.bind(divvy, "c", function()
-  spoon.WindowHalfsAndThirds:leftHalf()
-  local win = hs.window.focusedWindow()
-  win:centerOnScreen()
 end)
 
 -- divvy bindings - old habits die hard
@@ -41,11 +35,5 @@ end)
 hs.hotkey.bind(divvy, "2", function()
   spoon.WindowHalfsAndThirds:rightHalf()
 end)
-
--- broke select upward
--- hs.hotkey.bind(divvy, "UP", function()
---   local win = hs.window.focusedWindow()
---   win:move({0,0,1,1})
--- end)
 
 hs.alert("Hammerspoon loaded")
