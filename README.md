@@ -15,10 +15,14 @@ from `~` run following commands to get started:
 
 > `cd ~/dotfiles && source macos/dock.sh`
 
+## Dank Mono
+
+Remember to install the font from [here](https://dank.sh/)
+
 # Thanks to
 
 My dotfiles are heavily inspired from the dotfiles of:
 
+- [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
 - [Marcel Pociot](https://github.com/mpociot/dotfiles)
 - [Dries Vints](https://github.com/driesvints/dotfiles)
-- [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)

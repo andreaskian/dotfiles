@@ -109,10 +109,12 @@ alias dm="dark-mode"
 
 # Remap code to `code-insiders`
 alias code="code-insiders"
+#alias webstorm="open -na \"WebStorm.app\" --args \"$@\""
 
 # zsh / ohmyzsh configs
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
+alias hosts="code /etc/hosts"
 
 # Node / NPM
 alias ni="npm install";
