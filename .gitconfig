@@ -1,6 +1,8 @@
-[user]
-	name = Andreas Kian
-	email = andreas@andreaskian.dk
+[include]
+	path = ~/.gitconfig-personal
+
+[includeIf "gitdir:~/Code/"]
+	path = ~/.gitconfig-work
 
 [github]
 	user = andreaskian
@@ -13,5 +15,6 @@
 
 [pull]
 	rebase = true
+
 [init]
 	defaultBranch = main
