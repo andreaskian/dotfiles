@@ -2,7 +2,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
-    vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal right<CR>', {})
+    vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal right<CR>", {})
     local configs = require("nvim-treesitter.configs")
     configs.setup({
       -- ensure_installed = { "lua", "javascript" },
@@ -10,5 +10,5 @@ return {
       highlight = { enable = true },
       indent = { enable = true },
     })
-  end
+  end,
 }
