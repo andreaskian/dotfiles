@@ -11,7 +11,7 @@ brew 'mas'
 brew 'node'
 
 cask '1password'
-cask 'bartender'
+cask 'hiddenbar'
 cask 'brave-browser'
 cask 'discord'
 cask 'dropbox'
