@@ -1,4 +1,4 @@
 font-family = Dank Mono
 font-size = 18
-theme = shades-of-purple
-
+theme = Shades of Purple
+confirm-close-surface = false
